@@ -23,7 +23,7 @@ This project uses a YOLOv8 model to detect QR codes in images and OpenCV to prep
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/srivatsavsurya/qr-detect-decode.git
+git clone [https://github.com/srivatsavsurya/qr-detect-decode.git](https://github.com/srivatsavsurya/QR_Detect_Decode.git)
 cd qr-detect-decode
 ```
 ### Set Up Virtual Environment
