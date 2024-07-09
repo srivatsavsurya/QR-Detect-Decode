@@ -37,20 +37,20 @@ Place the best.pt model file in the project directory. You can train your model 
 
 ### Usage
 
-if you have a bunch of pdf, create a folder ./Images and ./PDFs
+#### if you have a bunch of pdf, create a folder ./Images and ./PDFs
 and run
 ```sh
 python3 convert_pdf_to_image.py
 ```
 
-Run the script with an image:
+#### Run the script with an image:
 
-To use tf model and detect the QR
+##### To use tf model and detect the QR
 ```sh
 python detect.py --image_path <path/to/your/image.jpg>
 ```
 
-To use open-cv2
+##### To use open-cv2
 ```sh
 python crop.py --image_path <path/to/your/image.jpg>
 ```
