@@ -36,7 +36,14 @@ pip install -r requirements.txt
 Place the best.pt model file in the project directory. You can train your model using Roboflow.
 
 ### Usage
-Run the script with an example image:
+
+if you have a bunch of pdf, create a folder ./Images and ./PDFs
+and run
+```sh
+python3 convert_pdf_to_image.py
+```
+
+Run the script with an image:
 
 To use tf model and detect the QR
 ```sh
