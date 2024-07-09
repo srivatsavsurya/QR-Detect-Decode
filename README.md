@@ -23,5 +23,40 @@ This project uses a YOLOv8 model to detect QR codes in images and OpenCV to prep
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/yourusername/qrcode-detection.git
-cd qrcode-detection
+git clone https://github.com/srivatsavsurya/qr-detect-decode.git
+cd qr-detect-decode
+```
+### Set Up Virtual Environment
+
+It's recommended to use a virtual environment to manage dependencies.
+```sh
+pip install -r requirements.txt
+```
+### Download the YOLOv8 Model
+Place the best.pt model file in the project directory. You can train your model using Roboflow.
+
+### Usage
+Run the script with an example image:
+
+```sh
+python detect.py --image_path <path/to/your/image.jpg>
+```
+
+## JSON Output Format
+The output is a JSON array containing objects with the following structure:
+```json
+[
+  {
+    "bounding_box": {
+      "x": <x-coordinate>,
+      "y": <y-coordinate>,
+      "width": <width>,
+      "height": <height>
+    },
+    "data": "<decoded QR code data>"
+  }
+]
+```
+
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request for any changes.
