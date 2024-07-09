@@ -14,11 +14,11 @@ def convert_pdf_to_image(pdf_path, output_folder):
     images = convert_from_path(pdf_path, dpi=300)  # Using 300 DPI for high resolution
 
     for i, image in enumerate(images):
-        # Convert the image to 4K resolution
-        image_4k = image.resize((3840, 2160), Image.Resampling.LANCZOS)
+        # Convert the image
+        image_lanczos = image.resize((3840, 2160), Image.Resampling.LANCZOS)
 
         # Enhance the image to simulate HDR
-        enhancer = ImageEnhance.Brightness(image_4k)
+        enhancer = ImageEnhance.Brightness(image_lanczos)
         image_hdr = enhancer.enhance(1.2)  # Adjust brightness
         enhancer = ImageEnhance.Contrast(image_hdr)
         image_hdr = enhancer.enhance(1.3)  # Adjust contrast
