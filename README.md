@@ -38,9 +38,16 @@ Place the best.pt model file in the project directory. You can train your model 
 ### Usage
 Run the script with an example image:
 
+To use tf model and detect the QR
 ```sh
 python detect.py --image_path <path/to/your/image.jpg>
 ```
+
+To use open-cv2
+```sh
+python crop.py --image_path <path/to/your/image.jpg>
+```
+
 
 ## JSON Output Format
 The output is a JSON array containing objects with the following structure:
