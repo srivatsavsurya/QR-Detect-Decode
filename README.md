@@ -6,6 +6,9 @@ This project uses YOLOv8 for detecting QR codes in images and OpenCV for image p
 
 This project uses a YOLOv8 model to detect QR codes in images and OpenCV to preprocess the images. Detected QR codes are then decoded using the `pyzbar` library.
 
+![QR_detect decode](https://github.com/srivatsavsurya/QR_Detect_Decode/assets/109732969/9cb8ed6b-0dcd-4d25-a4d1-7c75b312ac05)
+
+
 ## Features
 
 - Detect QR codes in images using a YOLOv8 model.
